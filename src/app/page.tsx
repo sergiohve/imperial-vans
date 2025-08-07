@@ -1,103 +1,240 @@
+"use client";
 import Image from "next/image";
+import { ContactForm } from "./components/ContactForm";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ButtonWhatsApp from "./components/ButtonWhatsApp";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="font-sans bg-white text-gray-900">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      <section className="relative pt-25">
+        <div className="w-full h-96 md:h-screen overflow-hidden bg-gray-900">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-70"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <source
+              src="/Sprinter Premier Toilet/Sprinter 517 Jet Van Limo Merida.mp4"
+              type="video/mp4"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </video>
+          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight mb-4">
+              Redefine tu experiencia de viaje
+            </h1>
+            <p className="text-white text-xl md:text-2xl mb-8 max-w-2xl">
+              Tu oficina de ultra lujo o tu espacio de relajación personal.
+              Experimenta el viaje, no solo el destino.
+            </p>
+          </div>
         </div>
+      </section>
+
+      <main className="container mx-auto">
+        <section className="flex flex-col md:flex-row items-center gap-8 h-68 justify-center mt-30">
+          <div className="flex-1 max-w-xl">
+            <h3 className="text-4xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
+              Somos expertos en crear jets sobre ruedas
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Más que un simple vehículo, ofrecemos una experiencia curada.
+              Nuestros clientes de alto perfil, desde turistas internacionales
+              hasta ejecutivos corporativos, eligen Imperial Rental Vans por su
+              combinación única de privacidad, tecnología y lujo inigualable.
+              Cada detalle ha sido diseñado para tu máximo confort y
+              productividad en el camino.
+            </p>
+          </div>
+
+          <div className="items-center">
+            <Image
+              src="/IMPERIAL (23 julio)/IMPERIAL (23 julio)-22.jpg"
+              alt="Imperial Vans"
+              width={500}
+              height={333}
+              className="h-100 w-auto rounded"
+              priority
+            />
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+      <section className=" md:mt-32 sm:mt-60 relative overflow-hidden backdrop-blur-sm">
+        <div className="absolute inset-0 z-0 backdrop-blur-sm">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/Express Premier Limo 4 seats/Imperial (R6)-2.jpg"
+            alt="Fondo de lujo"
+            fill
+            sizes="100vw"
+            quality={100}
+            className="backdrop-blur-sm"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 py-12 backdrop-blur-sm">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">
+            CONVERSIONES
+          </h2>
+
+          <div>
+            <div className="bg-opacity-20 backdrop-blur-sm p-8 rounded-lg flex flex-col items-center justify-center h-64">
+              <Image
+                src="/icon-conversiones-de-lujo.svg"
+                alt="Conversiones de lujo"
+                width={80}
+                height={80}
+                className="h-20 w-auto rounded"
+                priority
+              />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Conversiones de lujo
+              </h3>
+              <a
+                href="/conversionesLujo"
+                className="mt-4 px-6 py-2 bg-white text-gray-900 font-medium rounded-full hover:bg-opacity-90 transition"
+              >
+                VER MÁS
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              UNA EXPERIENCIA INOLVIDABLE
+            </h2>
+            <p className="text-xl text-gray-700">
+              La experiencia de viaje que ofrece Imperial Vans es funcional,
+              segura y elegante, es por eso que cada unidad se siente como una
+              escapada.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center text-left">
+            <div className="space-y-6 max-w-md mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Están equipadas con:
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  "Wi-Fi (internet)",
+                  "Apple TV",
+                  "Netflix, Disney+, Amazon",
+                  "Consola de videojuegos",
+                  "Pantallas 4K",
+                  "Sillones con sistema de masaje",
+                  "Cámaras de seguridad",
+                  "Y mucho más",
+                ].map((item, index) => (
+                  <li key={index} className="flex justify-left items-center">
+                    <svg
+                      className="h-6 w-6 text-blue-600 mr-3"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-lg text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="max-w-2xl mx-auto text-center mt-16">
+            <p className="text-xl text-gray-700 mb-8">
+              Que harán que te olvides del tráfico y solo disfrutes del camino
+              en tu propia conversión de lujo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative flex py-20 bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/IMPERIAL (23 julio)/IMPERIAL (23 julio)-22.jpg"
+            alt="Fondo de contacto"
+            fill
+            sizes="100vw"
+            quality={100}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="absolute inset-0 bg-yellow-800 opacity-50"></div>
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Queremos ayudarte a obtener el auto de tus sueños
+            </h2>
+            <p className="text-xl text-gray-300">
+              Sabemos la importancia de la discreción: envíanos un mensaje y con
+              gusto te atenderemos de inmediato.
+            </p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+            <ContactForm />
+
+            <div className="w-full lg:w-1/2 flex flex-col justify-center text-white bg-opacity-10 backdrop-blur-sm rounded-xl shadow-2xl p-8">
+              <div className="mb-8">
+                <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
+                  Teléfonos
+                </h3>
+                <p className="text-lg mb-2">
+                  <span className="font-medium">Ventas:</span> (222) 590 37 74 |
+                  (55) 6697 9905
+                </p>
+                <p className="text-lg">
+                  <span className="font-medium">Planta:</span> (222) 210 37 06 |
+                  (222) 431 35 28
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
+                  Horario
+                </h3>
+                <p className="text-lg mb-2">
+                  Lunes a Viernes de 09:00 a 19:00 h
+                </p>
+                <p className="text-lg">Sábado de 09:00 a 13:00 h</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
+                  Dirección
+                </h3>
+                <p className="text-lg mb-2">
+                  Camino Real a Santa Clara Ocoyucan n.º 50
+                </p>
+                <p className="text-lg mb-2">
+                  Bodega 2 col. Emiliano Zapata, San Andrés Cholula, Pue.
+                </p>
+                <p className="text-lg">C.P. 72810</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+      <ButtonWhatsApp texto="*Hola Imperial Vans, me gustaría más información sobre sus servicios de viajes de lujo.*" />
     </div>
   );
 }
