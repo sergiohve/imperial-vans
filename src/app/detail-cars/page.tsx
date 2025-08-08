@@ -7,6 +7,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ButtonWhatsApp from "../components/ButtonWhatsApp";
 
+interface CarItem {
+  id: number;
+  type: string;
+  url: string;
+  alt: string;
+}
 export default function DetailCars() {
   const searchParams = useSearchParams();
   const carId = searchParams.get("id");
@@ -1771,8 +1777,8 @@ export default function DetailCars() {
     ],
   };
 
-  let videoItem = null;
-  let galleryItems: any[] = [];
+  let videoItem: CarItem | undefined | null = null;
+  let galleryItems: CarItem[] = [];
   let galleryTitle = "";
 
   if (carId === "1") {
