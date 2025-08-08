@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Footer from "../components/Footer";
@@ -26,10 +26,31 @@ const cars: { [key: string]: CarItem[] } = {
     { id: 5, type: "image", url: "/images/cadillac1.jpg", alt: "Imagen 1 del Cadillac" },
     { id: 6, type: "image", url: "/images/cadillac2.jpg", alt: "Imagen 2 del Cadillac" },
   ],
-  // ... Agrega el resto de tus vehículos aquí
+  expressPremierLimo4Seats: [
+    // Add items for expressPremierLimo4Seats
+  ],
+  expressVan2024: [
+    // Add items for expressVan2024
+  ],
+  expressVanPremierLimo: [
+    // Add items for expressVanPremierLimo
+  ],
+  imperialVans: [
+    // Add items for imperialVans
+  ],
+  Sprinter517XLJETVANLIMO: [
+    // Add items for Sprinter517XLJETVANLIMO
+  ],
+  SprinterPremierToilet: [
+    // Add items for SprinterPremierToilet
+  ],
+  imperialExpress: [
+    // Add items for imperialExpress
+  ],
 };
 
-export default function CarDetails() {
+// Componente principal que maneja la suspensión
+function CarDetailsContent() {
   const searchParams = useSearchParams();
   const carId = searchParams.get("id");
 
@@ -83,7 +104,6 @@ export default function CarDetails() {
 
   return (
     <>
-      <Header />
       <main className="mx-20 py-12 mt-40">
         <h2 className="text-3xl font-bold mb-8">{galleryTitle}</h2>
         {videoItem && (
@@ -118,7 +138,6 @@ export default function CarDetails() {
           </div>
         </section>
       </main>
-      <Footer />
 
       {showModal && (
         <div
@@ -180,6 +199,18 @@ export default function CarDetails() {
       <ButtonWhatsApp
         texto={`*Hola Imperial Vans, me gustaría más información sobre sus servicios de viajes de lujo con ${galleryTitle}*`}
       />
+    </>
+  );
+}
+
+export default function CarDetails() {
+  return (
+    <>
+      <Header />
+      <Suspense fallback={<div>Cargando...</div>}>
+        <CarDetailsContent />
+      </Suspense>
+      <Footer />
     </>
   );
 }
