@@ -39,13 +39,6 @@ function HomeContent() {
       </section>
 
       <main className="container mx-auto">
-        {/* AJUSTE 2: Sección "Somos expertos".
-          - Se ha reemplazado 'h-68' y 'mt-30' por clases estándar de Tailwind: 'py-20' y 'mt-20'.
-            Esto asegura que el espacio se maneje correctamente en todos los dispositivos.
-          - Se eliminó 'h-68' para que el contenido determine la altura, lo cual es más flexible.
-          - Para la imagen, se usó 'w-full' en el contenedor y 'h-auto' en la etiqueta Image,
-            asegurando que la imagen se adapte al ancho del contenedor sin distorsionarse.
-        */}
         <section className="flex flex-col md:flex-row items-center gap-8 py-20 justify-center mt-20">
           <div className="flex-1 max-w-xl">
             <h3 className="text-4xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
