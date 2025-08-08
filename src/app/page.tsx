@@ -56,7 +56,7 @@ function HomeContent() {
 
           <div className="items-center">
             <Image
-              src="/IMPERIAL (23 julio)/IMPERIAL (23 julio)-22.jpg"
+              src="/IMPERIAL (23 julio) Vers2/IMPERIAL (23 julio) Vers2-23.jpg"
               alt="Imperial Vans"
               width={500}
               height={333}
@@ -170,7 +170,7 @@ function HomeContent() {
       <section className="relative flex py-20 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/IMPERIAL (23 julio)/IMPERIAL (23 julio)-22.jpg"
+            src="/IMPERIAL (23 julio) Vers2/IMPERIAL (23 julio) Vers2-2.jpg"
             alt="Fondo de contacto"
             fill
             sizes="100vw"

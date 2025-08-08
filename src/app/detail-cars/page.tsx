@@ -1792,16 +1792,62 @@ const cars = {
   let galleryTitle = "";
 
   if (carId === "1") {
-    videoItem = cars.autobus?.find((item) => item.type === "video") || null;
-    galleryItems = cars.autobus?.filter((item) => item.type === "image") || [];
+    videoItem = cars.autobus.find((item) => item.type === "video");
+    galleryItems = cars.autobus.filter((item) => item.type === "image");
     galleryTitle = "Galería de Autobús Imperial";
   } else if (carId === "2") {
-    videoItem = cars.cadillacJetVan?.find((item) => item.type === "video") || null;
-    galleryItems = cars.cadillacJetVan?.filter((item) => item.type === "image") || [];
+    videoItem = cars.cadillacJetVan.find((item) => item.type === "video");
+    galleryItems = cars.cadillacJetVan.filter((item) => item.type === "image");
     galleryTitle = "Galería de Cadillac Escalade Jet Van";
+  } else if (carId === "3") {
+    videoItem = cars.expressPremierLimo4Seats.find(
+      (item) => item.type === "video"
+    );
+    galleryItems = cars.expressPremierLimo4Seats.filter(
+      (item) => item.type === "image"
+    );
+    galleryTitle = "Galería de Express Van XL Premier Limo";
+  } else if (carId === "4") {
+    videoItem = cars.expressVan2024.find((item) => item.type === "video");
+    galleryItems = cars.expressVan2024.filter((item) => item.type === "image");
+    galleryTitle = "Galería de Express Van XL Edicion Jet Van Limo";
+  } else if (carId === "5") {
+    videoItem = cars.expressVanPremierLimo.find(
+      (item) => item.type === "video"
+    );
+    galleryItems = cars.expressVanPremierLimo.filter(
+      (item) => item.type === "image"
+    );
+    galleryTitle = "Galería de Express Van XL Edicion Premier Limo";
+  } else if (carId === "6") {
+    videoItem = cars.imperialVans.find((item) => item.type === "video");
+    galleryItems = cars.imperialVans.filter((item) => item.type === "image");
+    galleryTitle = "Galería de Imperial Vans";
+  } else if (carId === "7") {
+    videoItem = cars.Sprinter517XLJETVANLIMO.find(
+      (item) => item.type === "video"
+    );
+    galleryItems = cars.Sprinter517XLJETVANLIMO.filter(
+      (item) => item.type === "image"
+    );
+    galleryTitle = "Galería de Sprinter 517 XL Jet Van Tijuana";
+  } else if (carId === "8") {
+    videoItem = cars.SprinterPremierToilet.find(
+      (item) => item.type === "video"
+    );
+    galleryItems = cars.SprinterPremierToilet.filter(
+      (item) => item.type === "image"
+    );
+    galleryTitle = "Sprinter Premier Toilet";
+  } else if (carId === "9") {
+    videoItem = cars.imperialExpress.find(
+      (item) => item.type === "video"
+    );
+    galleryItems = cars.imperialExpress.filter(
+      (item) => item.type === "image"
+    );
+    galleryTitle = "Imperial Express";
   }
-  // Continúa con el resto de condiciones para cada carId...
-
   const handleImageClick = (imageUrl: string, index: number) => {
     setSelectedImage(imageUrl);
     setCurrentIndex(index);
