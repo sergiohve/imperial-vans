@@ -12,22 +12,23 @@ export default function Home() {
 
       <section className="relative pt-25">
         <div className="w-full h-96 md:h-screen overflow-hidden bg-gray-900">
+         
           <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover opacity-70"
-          >
-            <source
-              src="/Sprinter Premier Toilet/Sprinter 517 Jet Van Limo Merida.mp4"
-              type="video/mp4"
-            />
-          </video>
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="w-full h-full object-cover opacity-70"
+>
+  <source
+    src="https://www.veed.io/view/d5e4ecad-08bf-435d-96a6-fecf6b5fceb3?panel=share"
+    type="video/mp4"
+  />
+</video>
           <div className="absolute inset-0 bg-black opacity-30"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight mb-4">
-              Redefine tu experiencia de viajee
+              Redefine tu experiencia de viaje
             </h1>
             <p className="text-white text-xl md:text-2xl mb-8 max-w-2xl">
               Tu oficina de ultra lujo o tu espacio de relajación personal.
