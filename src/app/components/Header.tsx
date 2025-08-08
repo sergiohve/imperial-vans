@@ -1,16 +1,14 @@
 "use client";
-
+import { Suspense } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
 
-interface HeaderProps {
-  children?: React.ReactNode;
-}
-
-export default function Header({ children }: HeaderProps) {
+// El componente HeaderContent ya no necesita un prop explícito para `children`.
+// React lo maneja automáticamente.
+function HeaderContent({ children }: { children?: React.ReactNode }) {
   const searchParams = useSearchParams();
   const carId = searchParams.get("id");
 
@@ -35,7 +33,6 @@ export default function Header({ children }: HeaderProps) {
 
   const visibleCategorias = allCategorias.slice(0, 7);
   const hiddenCategorias = allCategorias.slice(7);
-
   return (
     <div className="font-sans bg-white text-gray-900">
       <header className="bg-white shadow-md fixed w-full z-50 top-0">
@@ -92,13 +89,13 @@ export default function Header({ children }: HeaderProps) {
                   className="text-gray-500 hover:text-blue-600 transition-colors"
                   aria-label="Facebook"
                 >
-                   <svg
+                    <svg
                     className="w-6 h-6 mt-[1px]"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                  >
+                    >
                     <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
-                  </svg>
+                    </svg>
                 </a>
                 <a
                   href="https://www.twitter.com"
@@ -275,5 +272,17 @@ export default function Header({ children }: HeaderProps) {
         )}
       </header>
     </div>
+  );
+}
+
+interface HeaderProps {
+  children?: React.ReactNode;
+}
+
+export default function Header({ children }: HeaderProps) {
+  return (
+    <Suspense fallback={<div className="h-[header-height]"></div>}>
+      <HeaderContent>{children}</HeaderContent>
+    </Suspense>
   );
 }

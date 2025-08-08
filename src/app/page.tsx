@@ -1,30 +1,30 @@
 "use client";
+import { Suspense } from 'react';
 import Image from "next/image";
 import { ContactForm } from "./components/ContactForm";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ButtonWhatsApp from "./components/ButtonWhatsApp";
 
-export default function Home() {
+function HomeContent() {
   return (
-    <div className="font-sans bg-white text-gray-900">
+       <div className="font-sans bg-white text-gray-900">
       <Header />
 
       <section className="relative pt-25">
         <div className="w-full h-96 md:h-screen overflow-hidden bg-gray-900">
-         
           <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="w-full h-full object-cover opacity-70"
->
-  <source
-    src="https://www.veed.io/view/d5e4ecad-08bf-435d-96a6-fecf6b5fceb3?panel=share"
-    type="video/mp4"
-  />
-</video>
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-70"
+          >
+            <source
+              src="/Sprinter Premier Toilet/Sprinter 517 Jet Van Limo Merida.mp4"
+              type="video/mp4"
+            />
+          </video>
           <div className="absolute inset-0 bg-black opacity-30"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight mb-4">
@@ -237,5 +237,17 @@ export default function Home() {
       <Footer />
       <ButtonWhatsApp texto="*Hola Imperial Vans, me gustaría más información sobre sus servicios de viajes de lujo.*" />
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="flex justify-center items-center h-screen">
+        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
   );
 }

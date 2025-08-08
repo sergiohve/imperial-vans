@@ -1,35 +1,40 @@
 "use client";
+import { Suspense } from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function ConversionesLujo() {
+function ConversionesLujoContent() {
   const CategoriaBackgrounds = {
     EXPRESSVANXLEDICIONJETVANLIMO:
       "/EXPRESS VAN XL EDICION JET VAN LIMO/Imperial (25 de Junio)-26.jpg",
     CadillacEscaladeJetVan: "/Cadillac Escalade Jet Van/Cadillac-2.jpg",
-    ExpressPremierLimo4Seats: "/Express Premier Limo 4 seats/Imperial (GoPro)-3.jpg",
-    EXPRESSVANXLEDICIONPREMIERLIMO: "/EXPRESS VAN XL EDICION PREMIER LIMO/Imperial Vans (Color 1)-3.jpg",
+    ExpressPremierLimo4Seats:
+      "/Express Premier Limo 4 seats/Imperial (GoPro)-3.jpg",
+    EXPRESSVANXLEDICIONPREMIERLIMO:
+      "/EXPRESS VAN XL EDICION PREMIER LIMO/Imperial Vans (Color 1)-3.jpg",
     AUTOBUSES: "/Autobus Imperial Vans/IMPERIAL (Camion Volvo).jpg",
-    ImperialExpress: "/IMPERIAL 19 julio (Express)/IMPERIAL 19 julio (Express).jpg",
+    ImperialExpress:
+      "/IMPERIAL 19 julio (Express)/IMPERIAL 19 julio (Express).jpg",
     ImperialVan: "/IMPERIAL (23 julio) Vers2/IMPERIAL (23 julio) Vers2-2.jpg",
-    Sprinter517XLJetVan: "/Sprinter 517 XL Jet Van/WhatsApp Image 2023-03-02 at 18.42.21 (1).jpeg",
-    SprinterPremierToilet: "/Sprinter Premier Toilet/WhatsApp Image 2025-04-15 at 10.13.22 AM.jpeg"
+    Sprinter517XLJetVan:
+      "/Sprinter 517 XL Jet Van/WhatsApp Image 2023-03-02 at 18.42.21 (1).jpeg",
+    SprinterPremierToilet:
+      "/Sprinter Premier Toilet/WhatsApp Image 2025-04-15 at 10.13.22 AM.jpeg",
   };
-
   return (
     <div className="font-sans bg-white text-gray-900">
       <Header />
       <section className="relative py-20 bg-gray-900 overflow-hidden mt-35">
         <div className="absolute inset-0 z-0">
-          {/* <Image
+          <Image
             src="/Sprinter 517 XL Jet Van/WhatsApp Image 2023-03-02 at 18.42.25 (11).jpeg"
             alt="Interior de lujo"
             fill
             sizes="100vw"
             objectFit="cover"
             quality={100}
-          /> */}
+          />
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">
@@ -161,7 +166,9 @@ export default function ConversionesLujo() {
               >
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
-                  <h4 className="text-xl font-semibold">Sprinter 517 XL Jet Van</h4>
+                  <h4 className="text-xl font-semibold">
+                    Sprinter 517 XL Jet Van
+                  </h4>
                 </div>
               </div>
             </a>
@@ -175,15 +182,30 @@ export default function ConversionesLujo() {
               >
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
-                  <h4 className="text-xl font-semibold">Sprinter Premier Toilet</h4>
+                  <h4 className="text-xl font-semibold">
+                    Sprinter Premier Toilet
+                  </h4>
                 </div>
               </div>
             </a>
-
           </div>
         </div>
       </section>
       <Footer />
     </div>
+  );
+}
+
+export default function ConversionesLujo() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center h-screen">
+          <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+        </div>
+      }
+    >
+      <ConversionesLujoContent />
+    </Suspense>
   );
 }
