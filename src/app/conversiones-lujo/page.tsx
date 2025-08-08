@@ -22,14 +22,14 @@ export default function ConversionesLujo() {
       <Header />
       <section className="relative py-20 bg-gray-900 overflow-hidden mt-35">
         <div className="absolute inset-0 z-0">
-          <Image
+          {/* <Image
             src="/Sprinter 517 XL Jet Van/WhatsApp Image 2023-03-02 at 18.42.25 (11).jpeg"
             alt="Interior de lujo"
             fill
             sizes="100vw"
             objectFit="cover"
             quality={100}
-          />
+          /> */}
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">
