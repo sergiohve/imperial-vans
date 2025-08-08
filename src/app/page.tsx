@@ -39,7 +39,7 @@ function HomeContent() {
       </section>
 
       <main className="container mx-auto">
-        <section className="flex flex-col md:flex-row items-center gap-8 py-20 justify-center mt-20">
+        <section className="flex flex-col md:flex-row items-center gap-8 py-5 justify-center mt-16">
           <div className="flex-1 max-w-xl">
             <h3 className="text-4xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
               Somos expertos en crear jets sobre ruedas
@@ -68,7 +68,7 @@ function HomeContent() {
       </main>
 
 
-      <section className=" md:mt-32 sm:mt-60 relative overflow-hidden backdrop-blur-sm">
+      <section className=" md:mt-20 sm:mt-20 relative overflow-hidden backdrop-blur-sm">
         <div className="absolute inset-0 z-0 backdrop-blur-sm">
           <Image
             src="/Express Premier Limo 4 seats/Imperial (R6)-2.jpg"
