@@ -99,7 +99,7 @@ export default function Home() {
                 Conversiones de lujo
               </h3>
               <a
-                href="/conversionesLujo"
+                href="/conversiones-lujo"
                 className="mt-4 px-6 py-2 bg-white text-gray-900 font-medium rounded-full hover:bg-opacity-90 transition"
               >
                 VER MÁS
