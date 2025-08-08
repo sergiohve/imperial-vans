@@ -11,7 +11,7 @@ function HomeContent() {
        <div className="font-sans bg-white text-gray-900">
       <Header />
 
-      <section className="relative pt-25">
+     <section className="relative pt-24">
         <div className="w-full h-96 md:h-screen overflow-hidden bg-gray-900">
           <video
             autoPlay
@@ -39,7 +39,14 @@ function HomeContent() {
       </section>
 
       <main className="container mx-auto">
-        <section className="flex flex-col md:flex-row items-center gap-8 h-68 justify-center mt-30">
+        {/* AJUSTE 2: Sección "Somos expertos".
+          - Se ha reemplazado 'h-68' y 'mt-30' por clases estándar de Tailwind: 'py-20' y 'mt-20'.
+            Esto asegura que el espacio se maneje correctamente en todos los dispositivos.
+          - Se eliminó 'h-68' para que el contenido determine la altura, lo cual es más flexible.
+          - Para la imagen, se usó 'w-full' en el contenedor y 'h-auto' en la etiqueta Image,
+            asegurando que la imagen se adapte al ancho del contenedor sin distorsionarse.
+        */}
+        <section className="flex flex-col md:flex-row items-center gap-8 py-20 justify-center mt-20">
           <div className="flex-1 max-w-xl">
             <h3 className="text-4xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
               Somos expertos en crear jets sobre ruedas
@@ -54,18 +61,19 @@ function HomeContent() {
             </p>
           </div>
 
-          <div className="items-center">
+          <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src="/IMPERIAL (23 julio) Vers2/IMPERIAL (23 julio) Vers2-23.jpg"
               alt="Imperial Vans"
               width={500}
               height={333}
-              className="h-100 w-auto rounded"
+              className="w-full h-auto rounded"
               priority
             />
           </div>
         </section>
       </main>
+
 
       <section className=" md:mt-32 sm:mt-60 relative overflow-hidden backdrop-blur-sm">
         <div className="absolute inset-0 z-0 backdrop-blur-sm">
