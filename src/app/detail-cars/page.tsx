@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Footer from "../components/Footer";
@@ -52,12 +52,20 @@ const cars: { [key: string]: CarItem[] } = {
 // Componente principal que maneja la suspensión
 function CarDetailsContent() {
   const searchParams = useSearchParams();
-  const carId = searchParams.get("id");
 
   // Estados para controlar el modal
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Estado para el ID del coche, se inicializa a null y se actualiza en el cliente
+  const [carId, setCarId] = useState<string | null>(null);
+
+  // useEffect para obtener el carId solo después de que el componente se monte en el cliente
+  useEffect(() => {
+    setCarId(searchParams.get("id"));
+  }, [searchParams]);
+
 
   // Mapeo para obtener los datos de forma más eficiente
   const carDataMapping: { [key: string]: string } = {
@@ -72,9 +80,8 @@ function CarDetailsContent() {
     "9": "imperialExpress",
   };
 
-  const carKey = carDataMapping[carId as string];
+  const carKey = carId ? carDataMapping[carId] : undefined;
   const carItems = carKey ? cars[carKey] : [];
-
   const videoItem = carItems.find((item) => item.type === "video");
   const galleryItems = carItems.filter((item) => item.type === "image");
   const galleryTitle = carKey ? `Galería de ${carKey}` : "Galería de Vehículos";
