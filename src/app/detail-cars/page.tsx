@@ -13,16 +13,8 @@ interface CarItem {
   url: string;
   alt: string;
 }
-export default function DetailCars() {
-  const searchParams = useSearchParams();
-  const carId = searchParams.get("id");
 
-  // Estados para controlar el modal
-  const [showModal, setShowModal] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-   const cars = {
+ const cars = {
     autobus: [
       {
         id: 1,
@@ -1777,6 +1769,17 @@ export default function DetailCars() {
     ],
   };
 
+
+
+export default function CarDetails() {
+  const searchParams = useSearchParams();
+  const carId = searchParams.get("id");
+
+  // Estados para controlar el modal
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
   let videoItem: CarItem | undefined | null = null;
   let galleryItems: CarItem[] = [];
   let galleryTitle = "";
@@ -1906,7 +1909,7 @@ export default function DetailCars() {
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
           onClick={handleCloseModal}
         >
-          <div 
+          <div
             className="relative max-w-4xl w-full"
             onClick={(e) => e.stopPropagation()}
           >
@@ -1916,8 +1919,8 @@ export default function DetailCars() {
             >
               &times;
             </button>
-            
-           
+
+
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -1927,8 +1930,8 @@ export default function DetailCars() {
             >
               &larr;
             </button>
-            
-          
+
+
             <div className="relative w-full h-full">
               <Image
                 src={selectedImage}
@@ -1938,8 +1941,8 @@ export default function DetailCars() {
                 className="max-w-full max-h-screen object-contain rounded-lg shadow-lg mx-auto"
               />
             </div>
-            
-          
+
+
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -1949,7 +1952,8 @@ export default function DetailCars() {
             >
               &rarr;
             </button>
-            
+
+
             {/* Indicador de posición */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-800 bg-opacity-70 px-3 py-1 rounded-full text-sm">
               {currentIndex + 1} / {galleryItems.length}
