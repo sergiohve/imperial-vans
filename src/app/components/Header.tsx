@@ -6,8 +6,6 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
 
-// El componente HeaderContent ya no necesita un prop explícito para `children`.
-// React lo maneja automáticamente.
 function HeaderContent({ children }: { children?: React.ReactNode }) {
   const searchParams = useSearchParams();
   const carId = searchParams.get("id");
@@ -20,15 +18,15 @@ function HeaderContent({ children }: { children?: React.ReactNode }) {
   };
 
   const allCategorias = [
-    { id: 1, label: "Autobus Imp. Vans", slug: "autobus-imp-vans" },
-    { id: 2, label: "Cadillac Escalade Jet Van", slug: "cadillac-escalade-jet-van" },
-    { id: 3, label: "Express Premier Limo 4 seats", slug: "express-premier-limo-4-seats" },
-    { id: 4, label: "EXPRESS VAN XL EDICION JET VAN LIMO", slug: "express-van-xl-edicion-jet-van-limo" },
-    { id: 5, label: "EXPRESS VAN XL EDICION PREMIER LIMO", slug: "express-van-xl-edicion-premier-limo" },
-    { id: 6, label: "Imperial Van", slug: "Imperial Vans" },
-    { id: 9, label: "Imperial Express", slug: "Imperial Express" },
-    { id: 7, label: "Sprinter 517 XL Jet Van", slug: "sprinter-517-xl-jet-van" },
-    { id: 8, label: "Sprinter Premier Toilet", slug: "sprinter-premier-toilet" },
+    { id: 1, label: "JET BUS", slug: "autobus-imp-vans" },
+    { id: 2, label: "CADILLAC JET VAN", slug: "cadillac-escalade-jet-van" },
+    { id: 3, label: "EXPRESS PREMIER LIMO 4 VIP", slug: "express-premier-limo-4-seats" },
+    { id: 4, label: "EXPRESS VAN JET VAN LIMO", slug: "express-van-xl-edicion-jet-van-limo" },
+    { id: 5, label: "EXPRESS VAN PREMIER LIMO", slug: "express-van-xl-edicion-premier-limo" },
+    { id: 6, label: "SPRINTER JET VAN", slug: "Imperial Vans" },
+    { id: 9, label: "EXPRESS VAN PREMIER", slug: "Imperial Express" },
+    { id: 7, label: "SPRINTER JET VAN LIMO", slug: "sprinter-517-xl-jet-van" },
+    { id: 8, label: "SPRINTER PREMIER TOILET", slug: "sprinter-premier-toilet" },
   ];
 
   const visibleCategorias = allCategorias.slice(0, 7);
@@ -50,6 +48,13 @@ function HeaderContent({ children }: { children?: React.ReactNode }) {
                 />
               </Link>
             </div>
+            {/* Nuevo texto agregado aquí */}
+            <div className="hidden md:flex flex-col items-center justify-center text-center">
+              <h1 className="text-xl md:text-2xl font-bold tracking-tight text-gray-900">
+                ESPECIALISTAS EN CONVERSIONES DE GRAN LUJO
+              </h1>
+            </div>
+            {/* Fin del nuevo texto */}
             <div className="flex items-center">
               <div className="hidden lg:flex space-x-4 ml-4">
                 <a
@@ -89,13 +94,13 @@ function HeaderContent({ children }: { children?: React.ReactNode }) {
                   className="text-gray-500 hover:text-blue-600 transition-colors"
                   aria-label="Facebook"
                 >
-                    <svg
+                  <svg
                     className="w-6 h-6 mt-[1px]"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    >
+                  >
                     <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
-                    </svg>
+                  </svg>
                 </a>
                 <a
                   href="https://www.twitter.com"

@@ -1,9 +1,9 @@
 "use client";
-import { Suspense } from 'react';
+import { Suspense } from "react";
 import Image from "next/image";
 function FooterContent() {
   return (
-       <>
+    <>
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -11,16 +11,16 @@ function FooterContent() {
               <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Acerca de Imperial Vans
               </h3>
+
               <p className="text-sm md:text-base mb-4">
-                Imperial Vans lleva más de 3 años produciendo los mejores
-                transportes de lujo personalizados de Mexico.
-              </p>
-              <p className="text-sm md:text-base mb-4">
-                Imperial Vans lidera la industria en la transformación de las
-                furgonetas Mercedes-Benz Sprinter y Metris, los Cadillac
-                Escalade ESV y el nuevo Lincoln Navigator L en algunos de los
-                vehículos más productivos, cómodos, seguros y exclusivos del
-                mundo actual.
+                Con más de 18 años de experiencia, Imperial Vans se ha
+                consolidado como un líder en la creación de conversiones de gran
+                lujo. Nos especializamos en transformar vehículos en espacios
+                funcionales y sofisticados, diseñados meticulosamente para que
+                cada viaje se convierta en una experiencia inolvidable. Nuestro
+                compromiso es combinar la artesanía de alta calidad con un
+                diseño innovador, asegurando que cada conversión no solo cumpla,
+                sino que supere las expectativas de nuestros clientes.
               </p>
             </div>
             <div>
@@ -91,7 +91,9 @@ function FooterContent() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl font-bold mb-4">Lo mejor de lo mejor</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
+                Lo mejor de lo mejor
+              </h3>
               <div className="flex items-center gap-4">
                 <Image
                   src="/Imperial-Vans2.png"

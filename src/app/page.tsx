@@ -1,5 +1,5 @@
 "use client";
-import { Suspense } from 'react';
+import { Suspense } from "react";
 import Image from "next/image";
 import { ContactForm } from "./components/ContactForm";
 import Header from "./components/Header";
@@ -8,17 +8,17 @@ import ButtonWhatsApp from "./components/ButtonWhatsApp";
 
 function HomeContent() {
   return (
-       <div className="font-sans bg-white text-gray-900">
+    <div className="font-sans bg-white text-gray-900">
       <Header />
 
-     <section className="relative pt-24">
-        <div className="w-full h-96 md:h-screen overflow-hidden bg-gray-900">
+      <section className="relative pt-24">
+        <div className="w-full h-96 md:h-screen overflow-hidden">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover opacity-70"
+            className="w-full h-full object-cover"
           >
             <source
               src="/Sprinter Premier Toilet/Sprinter 517 Jet Van Limo Merida.mp4"
@@ -27,7 +27,7 @@ function HomeContent() {
           </video>
           <div className="absolute inset-0 bg-black opacity-30"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight mb-4">
+            <h1 className="text-white text-4xl md:text-5xl font-bold tracking-tight mb-4">
               Redefine tu experiencia de viaje
             </h1>
             <p className="text-white text-xl md:text-2xl mb-8 max-w-2xl">
@@ -41,22 +41,18 @@ function HomeContent() {
       <main className="container mx-auto">
         <section className="flex flex-col md:flex-row items-center gap-8 py-5 justify-center mt-16">
           <div className="flex-1 max-w-xl">
-            <h3 className="text-4xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
-              Somos expertos en crear jets sobre ruedas
+            <h3 className="text-2xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
+              Somos Imperial Vans especialistas en Conversiones de Gran Lujo.
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Más que un simple vehículo, ofrecemos una experiencia curada.
-              Nuestros clientes de alto perfil, desde turistas internacionales
-              hasta ejecutivos corporativos, eligen Imperial Rental Vans por su
-              combinación única de privacidad, tecnología y lujo inigualable.
-              Cada detalle ha sido diseñado para tu máximo confort y
-              productividad en el camino.
+              Mas de 18 años creando espacios funcionales, diseños planeados con
+              un solo objetivo… cada trayecto es una gran experiencia.
             </p>
           </div>
 
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
-              src="/IMPERIAL (23 julio) Vers2/IMPERIAL (23 julio) Vers2-23.jpg"
+              src="/Sprinter Premier Toilet/WhatsApp Image 2025-04-15 at 10.14.14 AM.jpeg"
               alt="Imperial Vans"
               width={500}
               height={333}
@@ -66,7 +62,6 @@ function HomeContent() {
           </div>
         </section>
       </main>
-
 
       <section className=" md:mt-20 sm:mt-20 relative overflow-hidden backdrop-blur-sm">
         <div className="absolute inset-0 z-0 backdrop-blur-sm">
@@ -111,32 +106,35 @@ function HomeContent() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              UNA EXPERIENCIA INOLVIDABLE
+              TU EXPERIENCIA DE GRAN LUJO
             </h2>
-            <p className="text-xl text-gray-700">
-              La experiencia de viaje que ofrece Imperial Vans es funcional,
-              segura y elegante, es por eso que cada unidad se siente como una
-              escapada.
+            <p className="text-[18px] text-gray-700">
+              En Imperial Vans, cada conversión está diseñada para ser un
+              santuario personal, combinando funcionalidad, seguridad y la
+              máxima elegancia. Cada trayecto se transforma en una escapada de
+              lujo.
             </p>
           </div>
 
           <div className="flex flex-col items-center text-left">
-            <div className="space-y-6 max-w-md mx-auto">
+            <div className="space-y-5 max-w-md mx-auto">
               <h3 className="text-2xl font-semibold text-gray-800">
                 Están equipadas con:
               </h3>
               <ul className="space-y-4">
                 {[
-                  "Wi-Fi (internet)",
+                  "Internet StarLink satelital",
                   "Apple TV",
                   "Netflix, Disney+, Amazon",
-                  "Consola de videojuegos",
-                  "Pantallas 4K",
-                  "Sillones con sistema de masaje",
-                  "Cámaras de seguridad",
-                  "Y mucho más",
+                  "Play Station 5 y X Box",
+                  "Pantallas Led 4K",
+                  "Sillones Presidenciales con masaje",
+                  "Sofá cama eléctrico",
+                  "Circuito cerrado de TV",
+                  "Medio baño",
+                  "Y mucho más…",
                 ].map((item, index) => (
                   <li key={index} className="flex justify-left items-center">
                     <svg
@@ -161,8 +159,8 @@ function HomeContent() {
 
           <div className="max-w-2xl mx-auto text-center mt-16">
             <p className="text-xl text-gray-700 mb-8">
-              Que harán que te olvides del tráfico y solo disfrutes del camino
-              en tu propia conversión de lujo.
+              Te olvidarás del tráfico y solo disfrutarás del camino en tu
+              propia conversión de lujo.
             </p>
           </div>
         </div>
@@ -197,16 +195,28 @@ function HomeContent() {
             <div className="w-full lg:w-1/2 flex flex-col justify-center text-white bg-opacity-10 backdrop-blur-sm rounded-xl shadow-2xl p-8">
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
-                  Teléfonos
+                  En contacto:
                 </h3>
                 <p className="text-lg mb-2">
-                  <span className="font-medium">Ventas:</span> (222) 590 37 74 |
+                  <span className="font-medium">Ventas:</span> (221) 848 20 58,
                   (55) 6697 9905
                 </p>
                 <p className="text-lg">
-                  <span className="font-medium">Planta:</span> (222) 210 37 06 |
-                  (222) 431 35 28
+                  <span className="font-medium">Fábrica:</span> (222) 210 37 06,
+                  431 35 28
                 </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
+                  Envíanos un correo
+                </h3>
+                <a
+                  href="mailto:ventas@imperialvans.commx"
+                  className="text-lg text-gray-300 hover:text-white transition-colors duration-200"
+                >
+                  ventas@imperialvans.commx
+                </a>
               </div>
 
               <div className="mb-8">
@@ -243,11 +253,13 @@ function HomeContent() {
 
 export default function Home() {
   return (
-    <Suspense fallback={
-      <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
-      </div>
-    }>
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center h-screen">
+          <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+        </div>
+      }
+    >
       <HomeContent />
     </Suspense>
   );

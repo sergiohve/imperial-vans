@@ -47,7 +47,7 @@ function ConversionesLujoContent() {
               sentirte en un viaje de primera clase. Es por eso que nuestras
               conversiones son hechas con la más alta calidad, tecnología de
               punta, seguridad y elegancia sin igual además de ofrecer distintas
-              ediciones que se adaptan a tus necesidades.
+              conversiones que se adaptan a tus necesidades.
             </p>
           </div>
           <div className="flex flex-wrap md:flex-row gap-8 justify-center items-stretch mt-12 min-h-[400px]">
