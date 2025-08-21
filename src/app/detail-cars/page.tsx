@@ -1887,7 +1887,7 @@ const cars = {
         
         {videoItem && (
           <div className="mb-16 rounded-lg overflow-hidden max-w-4xl mx-auto aspect-video">
-            <iframe className="w-full h-full" src={videoItem.url} title={videoItem.alt} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className="w-full h-full" src={videoItem.url} title={videoItem.alt} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
         )}
 
