@@ -38,7 +38,7 @@ const cars = {
         id: 1,
         type: "video",
         url: "https://www.youtube.com/embed/k3ogP8r1weY?si=BWW04yGM7ARqKW7T",
-        alt: "Video del Autobus Imperial",
+        alt: "JET BUS",
       },
       {
         id: 26,
@@ -238,7 +238,7 @@ const cars = {
         id: 4,
         type: "video",
         url: "https://www.youtube.com/embed/-T6F3jVJ1Hw",
-        alt: "Video Cadillac Jet van",
+        alt: "CADILLAC JET VAN",
       },
       {
         id: 5,
@@ -462,7 +462,7 @@ const cars = {
         id: 1,
         type: "video",
         url: "https://www.youtube.com/embed/dfF2Gt7H-2Q",
-        alt: "Video de Express Van XL Premier Limo",
+        alt: "EXPRESS PREMIER LIMO 4 VIP",
       },
       {
         id: 2,
@@ -608,7 +608,7 @@ const cars = {
         id: 1,
         type: "video",
         url: "https://www.youtube.com/embed/PlmuGsEtiQ8",
-        alt: "Video de Express Van XL Edicion Jet Van Limo",
+        alt: "EXPRESS VAN JET VAN LIMO",
       },
       {
         id: 2,
@@ -1002,7 +1002,7 @@ const cars = {
         id: 35,
         type: "video",
         url: "https://www.youtube.com/embed/agOr_uq3-Xw",
-        alt: "Video de imperialExpress",
+        alt: "SPRINTER JET VAN",
       },
     ],
     imperialExpress: [
@@ -1010,7 +1010,7 @@ const cars = {
         id: 1,
         type: "video",
         url: "https://www.youtube.com/embed/hinbhO91vYc",
-        alt: "Video de imperialExpress",
+        alt: "EXPRESS VAN PREMIER",
       },
       {
         id: 2,
@@ -1186,7 +1186,7 @@ const cars = {
         id: 1,
         type: "video",
         url: "https://www.youtube.com/embed/27XUNRU01BE",
-        alt: "Video de Sprinter 517 XL Jet Van Tijuana",
+        alt: "SPRINTER JET VAN LIMO",
       },
       {
         id: 2,
@@ -1506,7 +1506,7 @@ const cars = {
         id: 1,
         type: "video",
         url: "https://www.youtube.com/embed/tUzLS_yC-iw",
-        alt: "Video de Sprinter Premier Toilet",
+        alt: "SPRINTER PREMIER TOILET",
       },
       {
         id: 2,
@@ -1794,11 +1794,11 @@ const cars = {
   if (carId === "1") {
     videoItem = cars.autobus.find((item) => item.type === "video");
     galleryItems = cars.autobus.filter((item) => item.type === "image");
-    galleryTitle = "Galería de Autobús Imperial";
+    galleryTitle = "GALERÍA DE JET BUS";
   } else if (carId === "2") {
     videoItem = cars.cadillacJetVan.find((item) => item.type === "video");
     galleryItems = cars.cadillacJetVan.filter((item) => item.type === "image");
-    galleryTitle = "Galería de Cadillac Escalade Jet Van";
+    galleryTitle = "GALERÍA DE CADILLAC JET VAN";
   } else if (carId === "3") {
     videoItem = cars.expressPremierLimo4Seats.find(
       (item) => item.type === "video"
@@ -1806,11 +1806,11 @@ const cars = {
     galleryItems = cars.expressPremierLimo4Seats.filter(
       (item) => item.type === "image"
     );
-    galleryTitle = "Galería de Express Van XL Premier Limo";
+    galleryTitle = "GALERÍA DE EXPRESS PREMIER LIMO 4 VIP";
   } else if (carId === "4") {
     videoItem = cars.expressVan2024.find((item) => item.type === "video");
     galleryItems = cars.expressVan2024.filter((item) => item.type === "image");
-    galleryTitle = "Galería de Express Van XL Edicion Jet Van Limo";
+    galleryTitle = "GALERÍA DE EXPRESS VAN JET VAN LIMO";
   } else if (carId === "5") {
     videoItem = cars.expressVanPremierLimo.find(
       (item) => item.type === "video"
@@ -1818,11 +1818,11 @@ const cars = {
     galleryItems = cars.expressVanPremierLimo.filter(
       (item) => item.type === "image"
     );
-    galleryTitle = "Galería de Express Van XL Edicion Premier Limo";
+    galleryTitle = "GALERÍA DEEXPRESS VAN PREMIER LIMO";
   } else if (carId === "6") {
     videoItem = cars.imperialVans.find((item) => item.type === "video");
     galleryItems = cars.imperialVans.filter((item) => item.type === "image");
-    galleryTitle = "Galería de Imperial Vans";
+    galleryTitle = "GALERÍA DE SPRINTER JET VAN";
   } else if (carId === "7") {
     videoItem = cars.Sprinter517XLJETVANLIMO.find(
       (item) => item.type === "video"
@@ -1830,7 +1830,7 @@ const cars = {
     galleryItems = cars.Sprinter517XLJETVANLIMO.filter(
       (item) => item.type === "image"
     );
-    galleryTitle = "Galería de Sprinter 517 XL Jet Van Tijuana";
+    galleryTitle = "GALERÍA DE SPRINTER JET VAN LIMO";
   } else if (carId === "8") {
     videoItem = cars.SprinterPremierToilet.find(
       (item) => item.type === "video"
@@ -1838,7 +1838,7 @@ const cars = {
     galleryItems = cars.SprinterPremierToilet.filter(
       (item) => item.type === "image"
     );
-    galleryTitle = "Sprinter Premier Toilet";
+    galleryTitle = "GALERÍA DE SPRINTER PREMIER TOILET";
   } else if (carId === "9") {
     videoItem = cars.imperialExpress.find(
       (item) => item.type === "video"
@@ -1846,7 +1846,7 @@ const cars = {
     galleryItems = cars.imperialExpress.filter(
       (item) => item.type === "image"
     );
-    galleryTitle = "Imperial Express";
+    galleryTitle = "GALERÍA DE EXPRESS VAN PREMIER";
   }
   const handleImageClick = (imageUrl: string, index: number) => {
     setSelectedImage(imageUrl);
