@@ -37,7 +37,7 @@ const cars = {
       {
         id: 1,
         type: "video",
-        url: "/Autobus Imperial Vans/IMPERIAL (26 de Sept).mp4",
+        url: "https://www.youtube.com/embed/k3ogP8r1weY?si=BWW04yGM7ARqKW7T",
         alt: "Video del Autobus Imperial",
       },
       {
@@ -237,7 +237,7 @@ const cars = {
       {
         id: 4,
         type: "video",
-        url: "/Cadillac Escalade Jet Van/Cadillac Jet van.mp4",
+        url: "https://www.youtube.com/embed/-T6F3jVJ1Hw",
         alt: "Video Cadillac Jet van",
       },
       {
@@ -461,7 +461,7 @@ const cars = {
       {
         id: 1,
         type: "video",
-        url: "/Express Premier Limo 4 seats/Express Van XL Premier Limo 4 sillones.mp4",
+        url: "https://www.youtube.com/embed/dfF2Gt7H-2Q",
         alt: "Video de Express Van XL Premier Limo",
       },
       {
@@ -607,7 +607,7 @@ const cars = {
       {
         id: 1,
         type: "video",
-        url: "/Express Van XL Edicion Jet Van Limo/Express Van XL Jet Van SU.mp4",
+        url: "https://www.youtube.com/embed/PlmuGsEtiQ8",
         alt: "Video de Express Van XL Edicion Jet Van Limo",
       },
       {
@@ -1001,7 +1001,7 @@ const cars = {
       {
         id: 35,
         type: "video",
-        url: "/IMPERIAL (23 julio) Vers2/IMPERIAL 2 (julio 2025).mp4",
+        url: "https://www.youtube.com/embed/agOr_uq3-Xw",
         alt: "Video de imperialExpress",
       },
     ],
@@ -1009,7 +1009,7 @@ const cars = {
       {
         id: 1,
         type: "video",
-        url: "/IMPERIAL 19 julio (Express)/imperial 19 julio 2025.mp4",
+        url: "https://www.youtube.com/embed/hinbhO91vYc",
         alt: "Video de imperialExpress",
       },
       {
@@ -1185,7 +1185,7 @@ const cars = {
       {
         id: 1,
         type: "video",
-        url: "/Sprinter 517 XL Jet Van/Sprinter 517 XL Jet Van Tijuana.mp4",
+        url: "https://www.youtube.com/embed/27XUNRU01BE",
         alt: "Video de Sprinter 517 XL Jet Van Tijuana",
       },
       {
@@ -1505,7 +1505,7 @@ const cars = {
       {
         id: 1,
         type: "video",
-        url: "/Sprinter Premier Toilet/Sprinter 517 Jet Van Limo Merida.mp4",
+        url: "https://www.youtube.com/embed/tUzLS_yC-iw",
         alt: "Video de Sprinter Premier Toilet",
       },
       {
@@ -1887,14 +1887,7 @@ const cars = {
         
         {videoItem && (
           <div className="mb-16 rounded-lg overflow-hidden max-w-4xl mx-auto aspect-video">
-            <video
-               src="/Sprinter Premier Toilet/Sprinter 517 Jet Van Limo Merida.mp4"
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-              controls
-            />
+            <iframe className="w-full h-full" src={videoItem.url} title={videoItem.alt} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         )}
 

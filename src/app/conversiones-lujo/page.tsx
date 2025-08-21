@@ -60,7 +60,7 @@ function ConversionesLujoContent() {
               >
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
-                  <h4 className="text-xl font-semibold">AUTOBUSES</h4>
+                  <h4 className="text-xl font-semibold">JET BUS</h4>
                 </div>
               </div>
             </a>
@@ -75,7 +75,7 @@ function ConversionesLujoContent() {
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
                   <h4 className="text-xl font-semibold">
-                    Cadillac Escalade Jet Van
+                   CADILLAC JET VAN
                   </h4>
                 </div>
               </div>
@@ -91,7 +91,7 @@ function ConversionesLujoContent() {
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
                   <h4 className="text-xl font-semibold">
-                    Express Premier Limo 4 Seats
+                    EXPRESS PREMIER LIMO 4 VIP
                   </h4>
                 </div>
               </div>
@@ -107,7 +107,7 @@ function ConversionesLujoContent() {
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
                   <h4 className="text-xl font-semibold">
-                    Express Van XL Edicion Jet Van Limo
+                    EXPRESS VAN JET VAN LIMO
                   </h4>
                 </div>
               </div>
@@ -123,7 +123,7 @@ function ConversionesLujoContent() {
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
                   <h4 className="text-xl font-semibold">
-                    EXPRESS VAN XL EDICION PREMIER LIMO
+                    EXPRESS VAN PREMIER LIMO
                   </h4>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function ConversionesLujoContent() {
               >
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
-                  <h4 className="text-xl font-semibold">Imperial Van</h4>
+                  <h4 className="text-xl font-semibold">SPRINTER JET VAN</h4>
                 </div>
               </div>
             </a>
@@ -152,7 +152,7 @@ function ConversionesLujoContent() {
               >
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
-                  <h4 className="text-xl font-semibold">Imperial Express</h4>
+                  <h4 className="text-xl font-semibold">EXPRESS VAN PREMIER</h4>
                 </div>
               </div>
             </a>
@@ -167,7 +167,7 @@ function ConversionesLujoContent() {
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
                   <h4 className="text-xl font-semibold">
-                    Sprinter 517 XL Jet Van
+                   SPRINTER JET VAN LIMO
                   </h4>
                 </div>
               </div>
@@ -183,7 +183,7 @@ function ConversionesLujoContent() {
                 <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 rounded-lg transition-all duration-300"></div>
                 <div className="relative z-10 text-center">
                   <h4 className="text-xl font-semibold">
-                    Sprinter Premier Toilet
+                    SPRINTER PREMIER TOILET
                   </h4>
                 </div>
               </div>
