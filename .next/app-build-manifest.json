@@ -1,0 +1,53 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-879758e535f6a972.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
+      "static/chunks/app/_not-found/page-bbe1e353d2396e70.js"
+    ],
+    "/api/contact/route": [
+      "static/chunks/webpack-879758e535f6a972.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
+      "static/chunks/app/api/contact/route-ce613bcaa1d782e0.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-879758e535f6a972.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
+      "static/css/b7c2971266f0215a.css",
+      "static/chunks/app/layout-76c16a36feac1ad9.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-879758e535f6a972.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
+      "static/chunks/614-f0f5d037e70366a1.js",
+      "static/chunks/315-ff945edc966d79f2.js",
+      "static/chunks/app/page-63812887c5c13859.js"
+    ],
+    "/conversiones-lujo/page": [
+      "static/chunks/webpack-879758e535f6a972.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
+      "static/chunks/614-f0f5d037e70366a1.js",
+      "static/chunks/315-ff945edc966d79f2.js",
+      "static/chunks/app/conversiones-lujo/page-5ba4e9de6bbf5d06.js"
+    ],
+    "/detail-cars/page": [
+      "static/chunks/webpack-879758e535f6a972.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
+      "static/chunks/614-f0f5d037e70366a1.js",
+      "static/chunks/315-ff945edc966d79f2.js",
+      "static/chunks/app/detail-cars/page-10d19099ddd1fc70.js"
+    ]
+  }
+}
