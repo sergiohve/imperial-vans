@@ -1882,7 +1882,7 @@ const cars = {
   return (
     <>
       <Header />
-      <main className="mx-20 py-12 mt-40">
+      <main className="mx-5 py-12 mt-40">
         <h2 className="text-3xl font-bold mb-8">{galleryTitle}</h2>
         
         {videoItem && (
