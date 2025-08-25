@@ -29,7 +29,7 @@ function FooterContent() {
               </h3>
               <div className="flex space-x-6 mt-6 items-center">
                 <a
-                  href="https://www.youtube.com"
+                  href="https://youtube.com/@imperialvansconversiones?si=d-4kilSagX8B8HRQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-red-600 transition-colors"
@@ -44,7 +44,7 @@ function FooterContent() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/imperialvansmx?igsh=aG03NzB2eDFiYTZi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-pink-600 transition-colors"

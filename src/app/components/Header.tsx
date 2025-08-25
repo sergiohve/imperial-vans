@@ -56,7 +56,7 @@ function HeaderContent({ children }: { children?: React.ReactNode }) {
             <div className="flex items-center">
               <div className="hidden lg:flex space-x-4 ml-4">
                 <a
-                  href="https://www.youtube.com"
+                  href="https://youtube.com/@imperialvansconversiones?si=d-4kilSagX8B8HRQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-red-600 transition-colors"
@@ -71,7 +71,7 @@ function HeaderContent({ children }: { children?: React.ReactNode }) {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/imperialvansmx?igsh=aG03NzB2eDFiYTZi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-pink-600 transition-colors"
