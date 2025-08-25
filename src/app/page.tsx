@@ -44,7 +44,7 @@ function HomeContent() {
             <h3 className="text-2xl font-extrabold text-gray-900 mb-6 text-center md:text-left">
               Somos Imperial Vans especialistas en Conversiones de Gran Lujo.
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6 mx-5">
               Mas de 18 años creando espacios funcionales, diseños planeados con
               un solo objetivo… cada trayecto es una gran experiencia.
             </p>
@@ -215,7 +215,7 @@ function HomeContent() {
                   href="mailto:ventas@imperialvans.commx"
                   className="text-lg text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  ventas@imperialvans.commx
+                  ventas@imperialvans.com.mx
                 </a>
               </div>
 

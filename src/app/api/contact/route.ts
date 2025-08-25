@@ -1,12 +1,11 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
-// Configuración CORS reutilizable
 const corsHeaders = {
   "Access-Control-Allow-Origin": process.env.NEXT_PUBLIC_ALLOWED_ORIGINS || "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, Authorization",
-  "Access-Control-Max-Age": "86400", // Cache preflight por 24 horas
+  "Access-Control-Max-Age": "86400", 
 };
 
 export async function OPTIONS() {
@@ -16,7 +15,6 @@ export async function OPTIONS() {
 }
 
 export async function POST(request: Request) {
-  // Validación básica del método
   if (request.method !== "POST") {
     return new NextResponse("Method not allowed", {
       status: 405,
@@ -27,7 +25,6 @@ export async function POST(request: Request) {
   try {
     const { email, phone, message } = await request.json();
 
-    // Validación de campos requeridos
     if (!email || !message) {
       return new NextResponse(
         JSON.stringify({ error: "Email y mensaje son requeridos" }),
@@ -41,7 +38,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Configuración del transporter (recomendado para producción)
+    
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT || "587"),
@@ -51,11 +48,10 @@ export async function POST(request: Request) {
         pass: process.env.SMTP_PASSWORD,
       },
       tls: {
-        rejectUnauthorized: false, // Solo para desarrollo
+        rejectUnauthorized: false,
       },
     });
 
-    // Opciones del correo
     const mailOptions = {
   from: `"Imperial Vans" <${process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER}>`,
   to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
@@ -135,7 +131,6 @@ export async function POST(request: Request) {
   `
 };
 
-    // Envío del correo
     await transporter.sendMail(mailOptions);
 
     return new NextResponse(
