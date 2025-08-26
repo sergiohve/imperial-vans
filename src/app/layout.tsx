@@ -13,16 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // Configuración de metadatos del sitio
-  metadataBase: new URL('https://www.imperialvans.com.mx/'), // URL base para metadatos, importante para el SEO
+  metadataBase: new URL('https://www.imperialvans.com.mx/'), 
   alternates: {
-    canonical: './', // URL canónica para evitar contenido duplicado
+    canonical: './',
     languages: {
       'es-MX': 'https://www.imperialvans.com.mx/',
     },
   },
   title: {
-    default: "Imperial Vans | Conversiones de lujo personalizadas.",
+    default: "Imperial Vans",
     template: "%s | Imperial Vans",
   },
   description: "Especialistas en conversiones de unidades de lujo, incorporando tecnología, calidad y diseño con resultados únicos.",
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
     "escalade de lujo",
     "sprinter van"
   ],
-  authors: [{ name: "Goplek", url: "https://www.imperialvans.com.mx/" }], // Utiliza el autor del HTML
+  authors: [{ name: "Goplek", url: "https://www.imperialvans.com.mx/" }],
   creator: 'Goplek',
   publisher: 'Goplek',
   robots: {
@@ -60,12 +59,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/fragment/themes/imperial/favicons/favicon.ico' },
+      { url: '/Imperial-Vans2' },
       { url: '/fragment/themes/imperial/favicons/apple-touch-icon-72x72.png', sizes: '72x72', rel: 'apple-touch-icon' },
       { url: '/fragment/themes/imperial/favicons/apple-touch-icon-114x114.png', sizes: '114x114', rel: 'apple-touch-icon' },
     ],
   },
-  // Configuración de Open Graph (para redes sociales como Facebook)
+ 
   openGraph: {
     title: "Imperial Vans | Conversiones de lujo personalizadas.",
     description: "Especialistas en conversiones de unidades de lujo, incorporando tecnología, calidad y diseño con resultados únicos.",
