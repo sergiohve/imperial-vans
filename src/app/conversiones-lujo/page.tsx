@@ -4,6 +4,18 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Conversiones de Lujo | Imperial Vans',
+  description: 'Descubre nuestros servicios de conversiones de lujo. Personalizamos tu vehículo con la más alta tecnología y diseño.',
+  keywords: ['conversiones de lujo', 'Imperial Vans', 'camionetas de lujo', 'vehículos personalizados', 'diseño interior'],
+  openGraph: {
+    title: 'Conversiones de Lujo | Imperial Vans',
+    description: 'Descubre nuestros servicios de conversiones de lujo. Personalizamos tu vehículo con la más alta tecnología y diseño.',
+    url: 'https://www.imperialvans.com.mx/conversiones-lujo',
+  },
+};
 function ConversionesLujoContent() {
   const CategoriaBackgrounds = {
     EXPRESSVANXLEDICIONJETVANLIMO:
