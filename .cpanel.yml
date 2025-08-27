@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/imperial/repositories/imperial-vans/
+    - /bin/cp -R * $DEPLOYPATH
