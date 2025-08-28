@@ -1,53 +1,53 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-879758e535f6a972.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-7a34cadcb7695cec.js",
-      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
-      "static/chunks/app/_not-found/page-bbe1e353d2396e70.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-879758e535f6a972.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-7a34cadcb7695cec.js",
-      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
-      "static/css/8c2baf64ae593507.css",
-      "static/chunks/app/layout-76c16a36feac1ad9.js"
+      "static/chunks/webpack-04a31a9378ce5c5e.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-2b9031eb68cdf3bb.js",
+      "static/chunks/app/_not-found/page-812b7eb84c9a45fc.js"
     ],
     "/api/contact/route": [
-      "static/chunks/webpack-879758e535f6a972.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-7a34cadcb7695cec.js",
-      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
-      "static/chunks/app/api/contact/route-ce613bcaa1d782e0.js"
+      "static/chunks/webpack-04a31a9378ce5c5e.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-2b9031eb68cdf3bb.js",
+      "static/chunks/app/api/contact/route-d7f8e72c89ff0978.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-04a31a9378ce5c5e.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-2b9031eb68cdf3bb.js",
+      "static/css/8c2baf64ae593507.css",
+      "static/chunks/app/layout-0c039c8208cc6833.js"
     ],
     "/page": [
-      "static/chunks/webpack-879758e535f6a972.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-7a34cadcb7695cec.js",
-      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
-      "static/chunks/614-f0f5d037e70366a1.js",
-      "static/chunks/315-ff945edc966d79f2.js",
-      "static/chunks/app/page-63812887c5c13859.js"
+      "static/chunks/webpack-04a31a9378ce5c5e.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-2b9031eb68cdf3bb.js",
+      "static/chunks/573-c765a3e20c8809b3.js",
+      "static/chunks/649-0f7b0240a8739522.js",
+      "static/chunks/app/page-b36935cc8e8f7ca4.js"
     ],
     "/conversiones-lujo/page": [
-      "static/chunks/webpack-879758e535f6a972.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-7a34cadcb7695cec.js",
-      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
-      "static/chunks/614-f0f5d037e70366a1.js",
-      "static/chunks/315-ff945edc966d79f2.js",
-      "static/chunks/app/conversiones-lujo/page-16ca7b47a3b5b4ca.js"
+      "static/chunks/webpack-04a31a9378ce5c5e.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-2b9031eb68cdf3bb.js",
+      "static/chunks/573-c765a3e20c8809b3.js",
+      "static/chunks/649-0f7b0240a8739522.js",
+      "static/chunks/app/conversiones-lujo/page-93fc438ed81f1213.js"
     ],
     "/detail-cars/page": [
-      "static/chunks/webpack-879758e535f6a972.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-7a34cadcb7695cec.js",
-      "static/chunks/main-app-ce5fb8d6470ec6d2.js",
-      "static/chunks/614-f0f5d037e70366a1.js",
-      "static/chunks/315-ff945edc966d79f2.js",
-      "static/chunks/app/detail-cars/page-10d19099ddd1fc70.js"
+      "static/chunks/webpack-04a31a9378ce5c5e.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-2b9031eb68cdf3bb.js",
+      "static/chunks/573-c765a3e20c8809b3.js",
+      "static/chunks/649-0f7b0240a8739522.js",
+      "static/chunks/app/detail-cars/page-8513aa1e770d28cd.js"
     ]
   }
 }
